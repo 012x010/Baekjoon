@@ -1,7 +1,3 @@
-a = int(input())
-b = int(input())
+a, b = map(int, open(0))
 
-print(a*(b%10))
-print(a*int((b%100)/10))
-print(a*int((b/100)))
-print(a*b)
+print(b%10*a, b%100//10*a, b//100*a, b*a)
