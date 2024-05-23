@@ -1,9 +1,4 @@
-n = int(input())
+n = m = int(input())
 
-string = ""
-
-for i in range(n):
-    for j in range(i+1):
-        string+="*"
-    print(string)
-    string = ""
+for _ in range(n):
+    print("*" * (n - (m := m - 1)))
