@@ -10,10 +10,6 @@ while 1:
         break
 
 if sum % 2 == 0:
-    print(1 + index - n, end="")
-    print("/", end="")
-    print(sum - index + n - 1)
+    print("%d/%d"%(1 + index - n, sum - index + n - 1))
 else:
-    print(sum - index + n - 1, end="")
-    print("/", end="")
-    print(1 + index - n)
+    print("%d/%d"%(sum - index + n - 1, 1 + index - n))
